@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eccomerce Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a href="#" class="logo">Ecommerce</a>
+        <button class="open-cart">
+          <i class="fas fa-shopping-cart" id="cart-icon"></i>
+          <span class="cart-number">0</span>
+        </button>
+        <!-- Shopping Cart -->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content">
+            <!-- RENDER CART ITEMS HERE -->
+            <div class="cart-box-container"></div>
+            <!-- Cart Total -->
+            <div class="cart-total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            </div>
+            <!-- Purchase button  -->
+            <button class="buy-btn">Buy Now</button>
+            <!-- Cart Close -->
+            <button class="close-cart">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Shop -->
+    <section class="shop">
+      <h2 class="shop-title">Shop Products</h2>
+      <!-- RENDER SHOP ITEMS HERE -->
+      <div class="shop-content"></div>
+    </section>
+    <script src="products.js" defer></script>
+    <script src="app.js"></script>
+  </body>
+</html>
